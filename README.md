@@ -1,4 +1,4 @@
-# ChallengeAluraDecodificador
+# Challenge Alura Codificador/Decodificador
 Projeto desenvolvido para o primeiro desafio do Alura ONE
 
 ![alt text](image.png)
