@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #F3F5FC;
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', 'sans-serif';
+}
+
+header{
+    height: 2rem;
+}
+
+.logo {
+    padding: 1rem;
+}
+
+.tela-inicial{
+    display: flex;
+    justify-content: center;
+}
+
+.input-texto{
+    background: none;
+    color: #0A3871;
+    width: 25rem;
+    height: 10rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.input-texto::placeholder{
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    font-family: 'Inter', 'Sans-serif';
+} 
+
+ .lado-direito{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: calc(100vh - 60px);
+    border-radius: 2rem;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.img-lupa{
+    width: 12rem;
+    height: 12rem;
+}
+
+.lado-esquerdo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+
+.botoes-section{
+    display: flex;
+    gap: .5rem;
+    margin-top: 1.5rem;
+}
+
+.botao {
+    font-weight: 400;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
+}
+
+.botao:hover{
+ transform: scale(1.05);
+}
+.btn-criptografar{
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+.btn-descriptografar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+} 
+
+.inferior-direito{
+    display: flex;
+    width: 20rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.font-bold{
+    font-weight: 700;
+    color: #343A40;
+    font-size: 1.5rem;
+}
+
+p{
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #495057;
+}
+
+.text-with-icon {
+    position: relative; 
+    padding-left: 1.2rem; 
+}
+
+.text-with-icon::before {
+    content: "!"; 
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem; 
+    border-radius: 50%; 
+    background-color: #495057; 
+    color: #fff; 
+    font-size: 0.8rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.resultado-section{
+    display: flex;
+    font-size: 1.5rem;
+    color: #495057;
+    font-weight: 400;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+
+#mensagem-erro {
+    color: red;
+    font-size: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Decodificador de texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo"  src="./assets/Logo.png" alt="Logo da Alura">
+    </header>
+    <main class="tela-inicial">
+        <section class="lado-esquerdo">
+            <textarea class='input-texto' type="text" placeholder="Digite seu texto" required></textarea>
+            <div class="inferior">
+                <span class="text-with-icon">Apenas letras minúsculas e sem acento</span>
+                <div class="botoes-section">
+                    <button type='submit' class="botao btn-criptografar" onclick=criptografaTexto()> Criptografar</button>
+                    <button class="botao btn-descriptografar" onclick=decriptografaTexto()>Descriptografar</button>
+                </div>
+                <div id="mensagem-erro"></div>
+            </div>    
+        </section>
+        <section class="lado-direito">
+            <img class="img-lupa" src="./assets/High quality products.png" alt="Garoto com lupa olhando um diamante">
+            <div class="inferior-direito">
+                <p class="font-bold">Nenhuma mensagem encontrada</p>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+        </section>
+    </main>  
+    <script src="main.js"></script> 
+</body>
+</html>
